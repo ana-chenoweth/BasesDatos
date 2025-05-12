@@ -32,8 +32,6 @@ httpd.conf
 # Archivos del sistema
 *.~*
 
-# Base de datos local exportada (opcional)
-*.sql
 
 # Carpeta para subir archivos (si aplica)
 uploads/
