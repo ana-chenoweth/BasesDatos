@@ -1,0 +1,39 @@
+# Archivos y carpetas del entorno
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Carpetas de entorno de servidor local
+/vendor/        # si usas Composer
+node_modules/   # si usas algún paquete JS
+.env
+*.log
+*.lock
+
+# Archivos temporales
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# Archivos de caché
+*.cache
+*.class.php
+*.old
+*.orig
+
+# Configuración de XAMPP (local, no debe ir al repositorio)
+xampp-control.ini
+php.ini
+my.cnf
+httpd.conf
+
+# Archivos del sistema
+*.~*
+
+# Base de datos local exportada (opcional)
+*.sql
+
+# Carpeta para subir archivos (si aplica)
+uploads/
