@@ -26,6 +26,7 @@ CREATE TABLE Edificio (
 CREATE TABLE Aula (
     id_aula INT NOT NULL,
     id_edificio INT NOT NULL,
+    nombre VARCHAR(100),
     PRIMARY KEY (id_aula, id_edificio),
     FOREIGN KEY (id_edificio) REFERENCES Edificio(id_edificio)
 );
