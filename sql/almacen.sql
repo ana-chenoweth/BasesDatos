@@ -24,10 +24,9 @@ CREATE TABLE Edificio (
 );
 
 CREATE TABLE Aula (
-    id_aula INT NOT NULL,
+    id_aula SERIAL PRIMARY KEY,
     id_edificio INT NOT NULL,
     nombre VARCHAR(100),
-    PRIMARY KEY (id_aula, id_edificio),
     FOREIGN KEY (id_edificio) REFERENCES Edificio(id_edificio)
 );
 
@@ -36,7 +35,6 @@ CREATE TABLE Ejemplar (
     id_aula INT NOT NULL,
     id_edificio INT NOT NULL,
     id_objeto INT NOT NULL,
-    FOREIGN KEY (id_aula, id_edificio) REFERENCES Aula(id_aula, id_edificio),
+    FOREIGN KEY (id_aula) REFERENCES Aula(id_aula),
     FOREIGN KEY (id_objeto) REFERENCES Objeto(id_objeto)
 );
-
