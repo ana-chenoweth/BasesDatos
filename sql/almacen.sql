@@ -33,7 +33,6 @@ CREATE TABLE Aula (
 CREATE TABLE Ejemplar (
     id_ejemplar SERIAL PRIMARY KEY,
     id_aula INT NOT NULL,
-    id_edificio INT NOT NULL,
     id_objeto INT NOT NULL,
     FOREIGN KEY (id_aula) REFERENCES Aula(id_aula),
     FOREIGN KEY (id_objeto) REFERENCES Objeto(id_objeto)
