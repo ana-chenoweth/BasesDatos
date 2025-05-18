@@ -20,3 +20,4 @@ $categorias = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </tr>
     <?php endforeach; ?>
 </table>
+<a href="../index.php">Volver</a>

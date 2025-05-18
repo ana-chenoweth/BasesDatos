@@ -14,3 +14,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     Tipo: <input type="text" name="tipo" required>
     <button type="submit">Guardar</button>
 </form>
+<a href="index.php">Cancelar</a>\
