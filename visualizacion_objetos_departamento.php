@@ -20,7 +20,14 @@ ORDER BY d.nombre, ed.nombre, a.nombre;
 
 $resultado = $pdo->query($query)->fetchAll();
 ?>
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión</title>
+    <link rel="stylesheet" href="../style.css"> 
+</head>
+<body>
 <h2>Objetos por Departamento</h2>
 <table border="1">
     <tr>
@@ -43,3 +50,5 @@ $resultado = $pdo->query($query)->fetchAll();
     <?php endforeach; ?>
 </table>
 <a href="index.php">Volver al inicio</a>
+</body>
+</html>

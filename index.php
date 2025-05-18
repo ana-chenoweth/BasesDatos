@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión</title>
+    <link rel="stylesheet" href="../style.css"> 
+</head>
+<body>
 <h1>Gestión de Ejemplares de Articulos en Departamentos</h1>
 <h2> Gestiones </h2>
 <a href="departamento/index.php">Departamentos</a>
@@ -14,3 +22,5 @@
 <h2>Visualizaciones</h2>
 <a href="visualizacion_objetos_departamento.php">Objetos por Departamento</a>
 <br>
+</body>
+</html>

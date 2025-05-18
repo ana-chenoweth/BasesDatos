@@ -4,7 +4,14 @@ require '../config/db.php';
 $stmt = $pdo->query("SELECT * FROM departamento");
 $departamentos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión</title>
+    <link rel="stylesheet" href="../style.css"> 
+</head>
+<body>
 <h2>Departamentos</h2>
 <a href="create.php">Nuevo Departamento</a>
 <table border="1">
@@ -21,3 +28,5 @@ $departamentos = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <?php endforeach; ?>
 </table>
 <a href="../index.php">Volver</a>
+</body>
+</html>

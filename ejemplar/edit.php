@@ -27,7 +27,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $ejemplar = $stmt->fetch(PDO::FETCH_ASSOC);
 }
 ?>
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión</title>
+    <link rel="stylesheet" href="../style.css"> 
+</head>
+<body>
 <h2>Editar Ejemplar</h2>
 <form method="POST">
     Objeto:
@@ -51,3 +58,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <button type="submit">Actualizar</button>
 </form>
 <a href="index.php">Cancelar</a>
+</body>
+</html>

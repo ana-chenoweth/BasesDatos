@@ -19,7 +19,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     exit;
 }
 ?>
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión</title>
+    <link rel="stylesheet" href="../style.css"> 
+</head>
+<body>
 <h2>Nuevo Objeto</h2>
 <form method="POST">
     Nombre: <input type="text" name="nombre" required>
@@ -36,4 +43,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </select>
     <button type="submit">Guardar</button>
 </form>
-<a href="index.php">Cancelar</a>\
+<a href="index.php">Cancelar</a>
+</body>
+</html>

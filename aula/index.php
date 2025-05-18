@@ -11,7 +11,14 @@ $aulas = $pdo->query("
     JOIN Edificio e ON a.id_edificio = e.id_edificio
 ")->fetchAll();
 ?>
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión</title>
+    <link rel="stylesheet" href="../style.css"> 
+</head>
+<body>
 <h2>Aulas</h2>
 <a href="create.php">Nueva Aula</a>
 <table border="1">
@@ -29,3 +36,5 @@ $aulas = $pdo->query("
     <?php endforeach; ?>
 </table>
 <a href="../index.php">Volver</a>
+</body>
+</html>

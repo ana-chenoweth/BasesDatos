@@ -13,7 +13,14 @@ $ejemplares = $pdo->query("
     JOIN Edificio ed ON a.id_edificio = ed.id_edificio
 ")->fetchAll();
 ?>
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión</title>
+    <link rel="stylesheet" href="../style.css"> 
+</head>
+<body>
 <h2>Ejemplares</h2>
 <a href="create.php">Nuevo Ejemplar</a>
 <table border="1">
@@ -38,3 +45,5 @@ $ejemplares = $pdo->query("
     <?php endforeach; ?>
 </table>
 <a href="../index.php">Volver</a>
+</body>
+</html>

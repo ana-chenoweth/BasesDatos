@@ -12,7 +12,14 @@ $objetos = $pdo->query("
     JOIN Categoria c ON o.id_categoria = c.id_categoria
 ")->fetchAll();
 ?>
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión</title>
+    <link rel="stylesheet" href="../style.css"> 
+</head>
+<body>
 <h2>Objetos</h2>
 <a href="create.php">Nuevo Objeto</a>
 <table border="1">
@@ -37,3 +44,5 @@ $objetos = $pdo->query("
     <?php endforeach; ?>
 </table>
 <a href="../index.php">Volver</a>
+</body>
+</html>

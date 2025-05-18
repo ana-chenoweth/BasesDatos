@@ -28,7 +28,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     exit;
 }
 ?>
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión</title>
+    <link rel="stylesheet" href="../style.css"> 
+</head>
+<body>
 <h2>Nuevo Ejemplar</h2>
 <form method="POST">
     Objeto:
@@ -52,3 +59,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <button type="submit">Guardar</button>
 </form>
 <a href="index.php">Cancelar</a>
+</body>
+</html>
