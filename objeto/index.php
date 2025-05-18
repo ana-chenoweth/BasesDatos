@@ -24,16 +24,16 @@ $objetos = $pdo->query("
         <th>Acciones</th>
     </tr>
     <?php foreach ($objetos as $o): ?>
-        <tr>
-            <td><?= $o['id_objeto'] ?></td>
-            <td><?= $o['nombre_objeto'] ?></td>
-            <td><?= $o['descripcion_objeto'] ?></td>
-            <td><?= $o['tipo_categoria'] ?></td>
-            <td>
-                <a href="edit.php?id=<?= $e['id_objeto'] ?>">Editar</a> |
-                <a href="delete.php?id=<?= $e['id_objeto'] ?>">Eliminar</a>
-            </td>
-        </tr>
+    <tr>
+        <td><?= $o['id_objeto'] ?></td>
+        <td><?= $o['nombre_objeto'] ?></td>
+        <td><?= $o['descripcion_objeto'] ?></td>
+        <td><?= $o['tipo_categoria'] ?></td>
+        <td>
+            <a href="edit.php?id=<?= $o['id_objeto'] ?>">Editar</a> |
+            <a href="delete.php?id=<?= $o['id_objeto'] ?>">Eliminar</a>
+        </td>
+    </tr>
     <?php endforeach; ?>
 </table>
 <a href="../index.php">Volver</a>

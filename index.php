@@ -11,4 +11,6 @@
 <a href="objeto/index.php">Objetos</a>
 <br>
 <a href="categoria/index.php">Categorias</a>
-<h2> Visualizaciones </h2>
+<h2>Visualizaciones</h2>
+<a href="visualizacion_objetos_departamento.php">Objetos por Departamento</a>
+<br>
