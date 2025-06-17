@@ -1,7 +1,7 @@
 
 # Almacén Universitario
 
-**Proyecto académico** que ofrece ejemplos y prácticas con bases de datos relacionales en diferentes entornos y lenguajes.
+**Proyecto académico** que ofrece ejemplos y prácticas con bases de datos relacionales con llaves foráneas y subconsultas.
 
 ---
 
